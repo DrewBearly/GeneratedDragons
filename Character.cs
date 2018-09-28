@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace GeneratedDragons_Source
 {
@@ -6,9 +7,7 @@ namespace GeneratedDragons_Source
     {
         public string Name{get; private set;}
         public string Race{get; private set;}
-        public int RaceType{get; set;}
         public string Class{get; private set;}
-        public int ClassType{get; private set;}
         public bool type {get; private set;}
         public int STR {get; set;}
         public int DEX {get; set;}
@@ -30,11 +29,43 @@ namespace GeneratedDragons_Source
             }
         }
 
+        public bool statSet;
+
+        List<int> statCache = new List<int>();
+        Random randNumb = new Random();
 
         public Character(string nameIn, string classIn, string raceIn, int typeIn)
         {
             Name = nameIn;
             Class = classIn;
+        }
+
+        private Character randomStatGenerator(Character charIn)
+        {
+            return charIn;
+        } //generates 6 different scores based on rolling method
+
+        private Character healthGenerator(Character charIn)
+        {
+            return charIn;
+        } //generates health based on CON score
+
+        private int roll4d4()
+        {
+            int roll = 0;
+            int[] rolls = new int[4];
+            for (int i = 0; i < 4; i++)
+            {
+                rolls[i] = randNumb.Next(1, 5);
+            }
+            Array.Sort(rolls);
+            for (int i = 1; i < 4; i++)
+            {
+                roll += rolls[i];
+            }
+            
+            return roll;
+
         }
     }
 }
