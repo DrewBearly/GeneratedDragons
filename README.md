@@ -33,9 +33,16 @@ CLI Program for stats
 Proto Architecture:
 
 Program.cs - handles user input and include main()
-StatGen.cs - takes a character object and pumps stats into it, pushes out to program
-Character.cs - class generates a character object with the values into it
-XMLExport.cs - exports the character object's values into a formatted XML sheet.
+Character.cs - creates an object, assigns an xml document to it for character data, and manipulates the document.
+
+GeneratedDragons.Proto-----
+
+main->program-
+            --> character <existing or new?>
+                        -->new create new object, tie new storage document, generate based on ruleset
+                                    -->accept user input to guide character generation
+                -->leave character available for use in rest of program.
+
 
 Generate Algorithm:
 
@@ -43,3 +50,9 @@ Create empty character object
 Push object to StatGen
 Gen Stats for Character object
 pump out to Program.cs for output to cmd
+
+
+Code Reuse Goals:
+ - character should be able to generate any current PHB character regardless of race
+ - new classes should be able to be added without much effort (XML implementation? generate new character based on metadata or database?)
+ *- additional rulesets should be able to be used (ones that use a character-with-numbers-type system, such as pathfinder or others)

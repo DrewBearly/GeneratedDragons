@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneratedDragons-Source", "GeneratedDragons-Source.csproj", "{E97E2B4B-3E1A-4F5A-87A5-08C2F5480B1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E97E2B4B-3E1A-4F5A-87A5-08C2F5480B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97E2B4B-3E1A-4F5A-87A5-08C2F5480B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97E2B4B-3E1A-4F5A-87A5-08C2F5480B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97E2B4B-3E1A-4F5A-87A5-08C2F5480B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00CC0A28-E1AA-4970-95BA-3979DE444BB1}
+	EndGlobalSection
+EndGlobal
